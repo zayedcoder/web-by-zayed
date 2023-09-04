@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(https://img.freepik.com/premium-photo/beautiful-mountain-range-reflects-tranquil-water-generative-ai_188544-9117.jpg)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(30px);
+}
+header{
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+}
+header a{
+    text-decoration: none;
+    font-size: 1.3em;
+    margin-right: 25px;
+    color: #fff;
+    position: relative;
+}
+header a::after{
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    left: 0;
+    bottom:-6px;
+    width: 100%;
+    height: 3px;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transition: transform.5s;
+    
+}
+header a:hover::after{
+    transform: scaleX(1);
+}
+.name{
+    font-size: 3em;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box .logo{
+    text-align: center;
+    font-size: 3em;
+    
+    
+}
+.logo{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+.box{
+    backdrop-filter: blur(15px);
+    display: flex;
+    background: transparent;
+    height: 380px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     color: #fff;
+     border: #fff solid 1px;
+}
+.box .inputbox{
+
+
+    width: 100%;
+    margin: 20px 0;
+}
+.inputbox input{
+    height: 100%;
+    left: 0;
+    height: 40px;
+    background: transparent;
+    width: 270px;
+    border-radius: 20px;
+    outline: none;
+    color: #ffffff;
+    border: #fff solid 1px;
+    text-decoration: none;
+    display: flex;
+}
+.box .lgn{
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    background:transparent;
+;
+}
+.box .forget{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+.lgn button{
+    margin-top: 10px;
+    height:40px;
+    width: 120px;
+    background: transparent;
+    border: #fff solid 1px;
+    border-radius: 3px;
+    color: #fff;
+}
