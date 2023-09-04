@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Raleway:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    backdrop-filter: blur(7px);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(spy.png)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+header{
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.webname {
+    font-size: 2.9em;
+    color: #fff;
+    margin-left: 40px;
+    margin-top: 30px;
+
+
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 15px;
+  font-size: 1.2em;
+  position: relative;
+  width: 100%;
+}
+header a::after{
+    content: '';
+    border: #fff 2px solid ;
+    position: absolute;
+    color: #fff;
+    border-radius: 5px;
+    left: 0;
+    width: 100%;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition:  transform .5s;
+
+}
+header a:hover::after{
+    transform: scaleX(1);
+
+}
+.wapper{
+    align-items: center;
+    display: flex;
+    height: 370px;
+    width: 310px;
+    border: #fff solid 2px;
+    border-radius: 10px;
+    background: transparent;
+
+}
+.zyd{
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.wapper .inputbox{
+    margin:  20px 0;
+}
+.inputbox input{
+    height: 40px;
+    width: 90%;
+    background: transparent;
+    border: #fff solid 2px;
+    border-radius: 20px;
+    margin-left: 15px;
+    outline: none;
+    color: #fff;
+}
+.inputbox label{
+    color: #fff;
+    margin-left: 23px;
+    margin-top: 10px;
+}
+.inputbox span{
+    color: #fff;
+    margin-left: 22px;
+}
+.forget{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+
+}
+.forget input{
+    margin-left: 10px;
+}
+.login{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 10px;
+    
+
+
+}
+.login button{
+    height: 45px;
+    width: 150px;
+    border-radius: 7px;
+    outline: none;
+    background:transparent;
+    border: #fff solid 2px;
+    color: #fff;
+}
